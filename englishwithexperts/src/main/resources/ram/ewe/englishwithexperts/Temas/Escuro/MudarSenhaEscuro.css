@@ -1,0 +1,98 @@
+/**
+*@author Ramadan ismaeL
+*/
+
+BorderPane {
+    -fx-border-width: 1;
+    -fx-border-color: #548AF7;
+}
+
+.nav-top-confirmacao {
+    -fx-background-color: linear-gradient(to bottom right, #263341, #394D62, #B6C5D3);
+}
+
+.nav-top-confirmacao {
+    -fx-font-family: "Arial Narrow";
+    -fx-font-size: 20px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #fff;
+}
+
+.nav-center {
+    -fx-background-color: #2D2E30;
+}
+
+.message-title {
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+    -fx-text-fill: white;
+}
+
+.message {
+    -fx-font-size: 16pt;
+    -fx-alignment: center;
+    -fx-text-fill: #c0c0c0;
+    -fx-font-weight: bold;
+}
+
+Label {
+    -fx-font-family: "Agency FB";
+}
+
+.nav-bottom {
+    -fx-background-color: #1E1F22;
+    -fx-pref-height: 35px;
+}
+
+Button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #fff;
+    -fx-border-radius: 10px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(79, 156, 249, 0.54), 10, 0.3, 0, 0);
+}
+
+Button:hover {
+    -fx-border-color: linear-gradient(to bottom right, rgba(79, 156, 249, 0.54), red);
+}
+
+.textFieldRegisterView {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-width: 0.2px;
+    -fx-border-color: gray;
+    -fx-border-radius: 5px;
+    -fx-pref-width: 395px;
+    -fx-pref-height: 27px;
+    -fx-font-family: Arial;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #fff;
+}
+
+.textEmptyRed {
+    -fx-border-color: red;
+}
+
+.textGray {
+    -fx-border-color: gray;
+}
+
+.textFieldRegisterView:focused, .textGray:focused, .textEmptyRed:focused {
+    -fx-border-width: 0.5px;
+    -fx-border-color: #548AF7;
+    -fx-font-size: 12pt;
+}
+
+.passwordEYESRegisterView {
+    -fx-background-color: #2D2E30;
+    -fx-background-radius: 0px 5px 5px 0px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 0px 0.2px 0px 0px;
+    -fx-border-color: transparent;
+    -fx-pref-width: 32px;
+    -fx-pref-height: 25px;
+}
+
+FontAwesomeIconView {
+    -fx-fill: #c0c0c0;
+}

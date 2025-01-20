@@ -1,0 +1,54 @@
+VBox {
+    -fx-padding: 25px;
+}
+
+.tamanho {
+    -fx-pref-width: 794px;
+    -fx-pref-height: 593px;
+    -fx-background-color: #fff;
+}
+
+.tamanho-metade {
+    -fx-pref-width: 795px;
+    -fx-pref-height: 543px;
+    -fx-background-color: #fff;
+}
+
+Label {
+    -fx-font-family: "Calibri";
+    -fx-text-fill: #1E1F22;
+    -fx-font-size: 14pt;
+}
+
+.titulo {
+    -fx-font-family: "Broadway";
+    -fx-text-fill: linear-gradient(to bottom right, #00152D, #006AE2);;
+    -fx-font-size: 26pt;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.infoBold {
+    -fx-font-weight: bold;
+}
+
+.reciboValor {
+    -fx-font-size: 17pt;
+}
+
+.custom-checkbox {
+    -fx-font-family: "Calibri";
+    -fx-font-size: 14pt;
+    -fx-text-fill: #1E1F22;
+}
+
+.custom-checkbox .box {
+    -fx-border-color: #ddd;
+    -fx-background-color: transparent;
+}
+
+.footer {
+    -fx-font-family: "Calibri";
+    -fx-text-fill: #656665;
+    -fx-font-size: 10pt;
+}

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="formFerramentas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="650.0" styleClass="nav-center" stylesheets="@../../Temas/Claro/FerramentasLight.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ram.ewe.englishwithexperts.Controllers.Ferramentas.FerramentasController">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="624.0" styleClass="window2">
+         <children>
+            <Button fx:id="btnClose" contentDisplay="RIGHT" layoutX="577.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="71.0" styleClass="close">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CLOSE" size="1.2em" text="" />
+               </graphic>
+            </Button>
+            <Label fx:id="lblTitle" layoutX="10.0" layoutY="5.0" prefHeight="27.0" prefWidth="206.0" styleClass="title" text="CONFIGURAÇÕES" />
+            <Line endX="622.0" layoutX="1.0" layoutY="36.0" styleClass="line" />
+         </children>
+      </AnchorPane>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="561.0" prefWidth="648.0" styleClass="window2" vbarPolicy="ALWAYS" vmax="0.9">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1890.0" prefWidth="649.0" styleClass="window2">
+               <children>
+                  <AnchorPane layoutX="6.0" layoutY="7.0" prefHeight="1890.0" prefWidth="624.0">
+                     <children>
+                        <VBox layoutX="103.0" layoutY="74.0" prefHeight="1890.0" prefWidth="624.0" AnchorPane.bottomAnchor="-20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Pane prefHeight="108.0" prefWidth="624.0" styleClass="space" />
+                              <AnchorPane prefHeight="50.0" prefWidth="624.0" styleClass="window2">
+                                 <children>
+                                    <Label fx:id="inscricaoTitle" layoutX="10.0" layoutY="5.0" prefHeight="27.0" prefWidth="212.0" styleClass="sub-title" text="&gt; INSCRIÇÕES" textAlignment="CENTER" />
+                                    <Line endX="622.0" layoutX="1.0" layoutY="36.0" styleClass="line" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="75.0" prefWidth="624.0" styleClass="window">
+                                 <children>
+                                    <Label fx:id="inscricao_lbl" layoutX="22.0" layoutY="10.0" text="Inscrição" />
+                                    <Label fx:id="inscricao_valorAtual_lbl" layoutX="182.0" layoutY="10.0" text="VALOR ATUAL" />
+                                    <Text fx:id="inscricao_valorAtual_txt" layoutX="182.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="250.00 MT" />
+                                    <FontAwesomeIconView fx:id="inscricao_icon_btn" glyphName="ANGLE_DOWN" layoutX="577.0" layoutY="34.0" size="2em" />
+                                    <MenuButton fx:id="inscricao_btn" layoutX="569.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+                                       <items>
+                                          <MenuItem fx:id="inscricao_atualizar_btn" mnemonicParsing="false" text="Atualizar" />
+                                          <MenuItem fx:id="inscricao_limpar_btn" mnemonicParsing="false" text="Limpar" />
+                                       </items>
+                                    </MenuButton>
+                                    <Spinner fx:id="inscricao_txt" layoutX="22.0" layoutY="30.0" />
+                                 </children>
+                              </AnchorPane>
+                              <Pane prefHeight="108.0" prefWidth="624.0" styleClass="space" />
+                              <AnchorPane prefHeight="260.0" prefWidth="624.0" styleClass="window">
+                                 <children>
+                                    <Label fx:id="ndm_nivel_lbl" layoutX="22.0" layoutY="10.0" text="Nível" />
+                                    <Label fx:id="ndm_duracao_lbl" layoutX="182.0" layoutY="10.0" text="Duração" />
+                                    <Label fx:id="ndm_mensalidade_lbl" layoutX="342.0" layoutY="10.0" text="Mensalidade" />
+                                    <TextField fx:id="ndm_nivel_txt" layoutX="22.0" layoutY="30.0" promptText="Nível" />
+                                    <TextField fx:id="ndm_duracao_txt" layoutX="182.0" layoutY="30.0" promptText="Duração" />
+                                    <FontAwesomeIconView fx:id="ndm_icon_btn" glyphName="ANGLE_DOWN" layoutX="577.0" layoutY="34.0" size="2em" />
+                                    <MenuButton fx:id="ndm_btn" layoutX="569.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+                                       <items>
+                                          <MenuItem fx:id="ndm_registrar_btn" mnemonicParsing="false" text="Registrar" />
+                                          <MenuItem fx:id="ndm_atualizar_btn" mnemonicParsing="false" text="Atualizar" />
+                                          <MenuItem fx:id="ndm_excluir_btn" mnemonicParsing="false" text="Excluir" />
+                                          <MenuItem fx:id="ndm_limpar_btn" mnemonicParsing="false" text="Limpar" />
+                                       </items>
+                                    </MenuButton>
+                                    <TableView fx:id="ndm_tableView" layoutX="22.0" layoutY="65.0" prefHeight="180.0" prefWidth="580.0">
+                                       <columns>
+                                          <TableColumn fx:id="ndm_col_nivel" prefWidth="165.0" text="Nível" />
+                                          <TableColumn fx:id="ndm_col_duracao" prefWidth="195.0" text="Duração" />
+                                          <TableColumn fx:id="ndm_col_mensalidade" prefWidth="217.5" text="Mensalidade" />
+                                       </columns>
+                                    </TableView>
+                                    <Label fx:id="ndm_id" layoutX="428.0" layoutY="10.0" text="id" visible="false" />
+                                    <Spinner fx:id="ndm_mensalidade_txt" layoutX="342.0" layoutY="30.0" />
+                                 </children>
+                              </AnchorPane>
+                              <Pane prefHeight="108.0" prefWidth="624.0" styleClass="space" />
+                              <AnchorPane prefHeight="216.0" prefWidth="624.0" styleClass="window">
+                                 <children>
+                                    <Label fx:id="hm_horario_lbl" layoutX="452.0" layoutY="45.0" text="Horário" />
+                                    <Label fx:id="hm_modalidade_lbl" layoutX="452.0" layoutY="110.0" text="Modalidade" />
+                                    <TextField fx:id="hm_horario_txt" layoutX="452.0" layoutY="65.0" promptText="Horário" />
+                                    <FontAwesomeIconView fx:id="hm_icon_btn" glyphName="ANGLE_DOWN" layoutX="577.0" layoutY="34.0" size="2em" />
+                                    <MenuButton fx:id="hm_btn" layoutX="569.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+                                       <items>
+                                          <MenuItem fx:id="hm_registrar_btn" mnemonicParsing="false" text="Registrar" />
+                                          <MenuItem fx:id="hm_atualizar_btn" mnemonicParsing="false" text="Atualizar" />
+                                          <MenuItem fx:id="hm_excluir_btn" mnemonicParsing="false" text="Excluir" />
+                                          <MenuItem fx:id="hm_limpar_btn" mnemonicParsing="false" text="Limpar" />
+                                       </items>
+                                    </MenuButton>
+                                    <TableView fx:id="hm_tableView" layoutX="22.0" layoutY="10.0" prefHeight="195.0" prefWidth="427.0">
+                                       <columns>
+                                          <TableColumn fx:id="hm_col_horario" prefWidth="269.5" text="Horário" />
+                                          <TableColumn fx:id="hm_col_modalidade" prefWidth="155.0" text="Modalidade" />
+                                       </columns>
+                                    </TableView>
+                                    <Label fx:id="hm_id" layoutX="453.0" layoutY="177.0" text="id" visible="false" />
+                                    <ComboBox fx:id="hm_modalidade_txt" layoutX="452.0" layoutY="130.0" prefWidth="150.0" />
+                                 </children>
+                              </AnchorPane>
+                              <Pane prefHeight="108.0" prefWidth="624.0" styleClass="space" />
+                              <AnchorPane prefHeight="221.0" prefWidth="624.0" styleClass="window">
+                                 <children>
+                                    <Label fx:id="dp_tipo_lbl" layoutX="22.0" layoutY="10.0" text="Tipo" />
+                                    <Label fx:id="dp_id" layoutX="453.0" layoutY="10.0" text="id" visible="false" />
+                                    <TextField fx:id="dp_tipo_txt" layoutX="22.0" layoutY="30.0" prefWidth="450.0" promptText="Tipo de Documento" styleClass="dp-tipo" />
+                                    <FontAwesomeIconView fx:id="dp_icon_btn" glyphName="ANGLE_DOWN" layoutX="577.0" layoutY="34.0" size="2em" />
+                                    <MenuButton fx:id="dp_btn" layoutX="569.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+                                       <items>
+                                          <MenuItem fx:id="dp_registrar_btn" mnemonicParsing="false" text="Registrar" />
+                                          <MenuItem fx:id="dp_atualizar_btn" mnemonicParsing="false" text="Atualizar" />
+                                          <MenuItem fx:id="dp_excluir_btn" mnemonicParsing="false" text="Excluir" />
+                                          <MenuItem fx:id="dp_limpar_btn" mnemonicParsing="false" text="Limpar" />
+                                       </items>
+                                    </MenuButton>
+                                    <TableView fx:id="dp_tableView" layoutX="22.0" layoutY="65.0" prefHeight="141.0" prefWidth="580.0">
+                                       <columns>
+                                          <TableColumn fx:id="dp_col_tipo" prefWidth="577.5" text="Tipo de Documento" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                              <Pane prefHeight="108.0" prefWidth="624.0" styleClass="space" />
+                              <HBox prefHeight="221.0" prefWidth="624.0">
+                                 <children>
+                                    <AnchorPane prefHeight="245.0" prefWidth="141.0" styleClass="hboxWindow">
+                                       <children>
+                                          <Label fx:id="genero_genero_lbl" layoutX="22.0" layoutY="10.0" text="Gênero" />
+                                          <Label fx:id="genero_id" text="id" visible="false" />
+                                          <TextField fx:id="genero_genero_txt" layoutX="22.0" layoutY="30.0" prefWidth="450.0" promptText="Gênero" />
+                                          <FontAwesomeIconView fx:id="genero_icon_btn" glyphName="ANGLE_DOWN" layoutX="257.0" layoutY="34.0" size="2em" />
+                                          <MenuButton fx:id="genero_btn" layoutX="249.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+                                             <items>
+                                                <MenuItem fx:id="genero_registrar_btn" mnemonicParsing="false" text="Registrar" />
+                                                <MenuItem fx:id="genero_atualizar_btn" mnemonicParsing="false" text="Atualizar" />
+                                                <MenuItem fx:id="genero_excluir_btn" mnemonicParsing="false" text="Excluir" />
+                                                <MenuItem fx:id="genero_limpar_btn" mnemonicParsing="false" text="Limpar" />
+                                             </items>
+                                          </MenuButton>
+                                          <TableView fx:id="genero_tableView" layoutX="22.0" layoutY="65.0" prefHeight="141.0" prefWidth="258.0">
+                                             <columns>
+                                                <TableColumn fx:id="genero_col_genero" prefWidth="255.5" text="Lista de Gêneros" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                    <Pane prefWidth="20.0" />
+                                    <AnchorPane prefHeight="245.0" prefWidth="141.0" styleClass="hboxWindow">
+                                       <children>
+                                          <Label fx:id="civil_lbl" layoutX="22.0" layoutY="10.0" text="Estado Civil" />
+                                          <Label fx:id="civil_id" text="id" visible="false" />
+                                          <TextField fx:id="civil_txt" layoutX="22.0" layoutY="30.0" prefWidth="450.0" promptText="Estado Civil" />
+                                          <FontAwesomeIconView fx:id="civil_icon_btn" glyphName="ANGLE_DOWN" layoutX="256.0" layoutY="34.0" size="2em" />
+                                          <MenuButton fx:id="civil_btn" layoutX="248.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+                                             <items>
+                                                <MenuItem fx:id="civil_registrar_btn" mnemonicParsing="false" text="Registrar" />
+                                                <MenuItem fx:id="civil_atualizar_btn" mnemonicParsing="false" text="Atualizar" />
+                                                <MenuItem fx:id="civil_excluir_btn" mnemonicParsing="false" text="Excluir" />
+                                                <MenuItem fx:id="civil_limpar_btn" mnemonicParsing="false" text="Limpar" />
+                                             </items>
+                                          </MenuButton>
+                                          <TableView fx:id="civil_tableView" layoutX="22.0" layoutY="65.0" prefHeight="141.0" prefWidth="258.0">
+                                             <columns>
+                                                <TableColumn fx:id="civil_col_civil" prefWidth="255.5" text="Lista de Estado Civil" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <Pane prefHeight="108.0" prefWidth="624.0" styleClass="space" />
+                              <AnchorPane prefHeight="221.0" prefWidth="624.0" styleClass="window">
+                                 <children>
+                                    <Label fx:id="relacao_lbl" layoutX="22.0" layoutY="10.0" text="Relação" />
+                                    <Label fx:id="relacao_id" layoutX="453.0" layoutY="10.0" text="id" visible="false" />
+                                    <TextField fx:id="relacao_txt" layoutX="22.0" layoutY="30.0" prefWidth="450.0" promptText="Relação com estudante" styleClass="dp-tipo" />
+                                    <FontAwesomeIconView fx:id="relacao_icon_btn" glyphName="ANGLE_DOWN" layoutX="577.0" layoutY="34.0" size="2em" />
+                                    <MenuButton fx:id="relacao_btn" layoutX="569.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+                                       <items>
+                                          <MenuItem fx:id="relacao_registrar_btn" mnemonicParsing="false" text="Registrar" />
+                                          <MenuItem fx:id="relacao_atualizar_btn" mnemonicParsing="false" text="Atualizar" />
+                                          <MenuItem fx:id="relacao_excluir_btn" mnemonicParsing="false" text="Excluir" />
+                                          <MenuItem fx:id="relacao_limpar_btn" mnemonicParsing="false" text="Limpar" />
+                                       </items>
+                                    </MenuButton>
+                                    <TableView fx:id="relacao_tableView" layoutX="22.0" layoutY="65.0" prefHeight="141.0" prefWidth="580.0">
+                                       <columns>
+                                          <TableColumn fx:id="relacao_col" prefWidth="577.5" text="Tipo de Relacionamento" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                              <Pane prefHeight="108.0" prefWidth="624.0" styleClass="space" />
+                              <Pane prefHeight="108.0" prefWidth="624.0" styleClass="space" />
+                              <Pane prefHeight="108.0" prefWidth="624.0" styleClass="space" />
+                              <AnchorPane prefHeight="50.0" prefWidth="624.0" styleClass="window2">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="5.0" prefHeight="27.0" prefWidth="212.0" styleClass="sub-title" text="&gt; PAGAMENTOS" textAlignment="CENTER" />
+                                    <Line endX="622.0" layoutX="1.0" layoutY="36.0" styleClass="line" />
+                                 </children>
+                              </AnchorPane>
+                              <HBox prefHeight="221.0" prefWidth="624.0">
+                                 <children>
+                                    <AnchorPane prefHeight="245.0" prefWidth="141.0" styleClass="hboxWindow">
+                                       <children>
+                                          <Label fx:id="lblMetodoPgmt" layoutX="22.0" layoutY="10.0" text="Método" />
+                                          <Label fx:id="metodo_id" text="id" visible="false" />
+                                          <TextField fx:id="txtMetodoPgmt" layoutX="23.0" layoutY="30.0" prefWidth="450.0" promptText="Método" />
+                                          <FontAwesomeIconView fx:id="metodo_icon_btn" glyphName="ANGLE_DOWN" layoutX="257.0" layoutY="34.0" size="2em" />
+                                          <MenuButton fx:id="metodo_btn" layoutX="249.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+                                             <items>
+                                                <MenuItem fx:id="metodo_registrar_btn" mnemonicParsing="false" text="Registrar" />
+                                                <MenuItem fx:id="metodo_atualizar_btn" mnemonicParsing="false" text="Atualizar" />
+                                                <MenuItem fx:id="metodo_excluir_btn" mnemonicParsing="false" text="Excluir" />
+                                                <MenuItem fx:id="metodo_limpar_btn" mnemonicParsing="false" text="Limpar" />
+                                             </items>
+                                          </MenuButton>
+                                          <TableView fx:id="metodo_tableView" layoutX="22.0" layoutY="65.0" prefHeight="141.0" prefWidth="258.0">
+                                             <columns>
+                                                <TableColumn fx:id="metodo_col" prefWidth="255.5" text="Métodos De Pagamentos" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                    <Pane prefWidth="20.0" />
+                                    <AnchorPane prefHeight="245.0" prefWidth="141.0" styleClass="hboxWindow">
+                                       <children>
+                                          <Label fx:id="civil_lbl1" layoutX="22.0" layoutY="10.0" text="Estado Civil" />
+                                          <Label fx:id="civil_id1" text="id" visible="false" />
+                                          <TextField fx:id="civil_txt1" layoutX="22.0" layoutY="30.0" prefWidth="450.0" promptText="Estado Civil" />
+                                          <FontAwesomeIconView fx:id="civil_icon_btn1" glyphName="ANGLE_DOWN" layoutX="256.0" layoutY="34.0" size="2em" />
+                                          <MenuButton fx:id="civil_btn1" layoutX="248.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+                                             <items>
+                                                <MenuItem fx:id="civil_registrar_btn1" mnemonicParsing="false" text="Registrar" />
+                                                <MenuItem fx:id="civil_atualizar_btn1" mnemonicParsing="false" text="Atualizar" />
+                                                <MenuItem fx:id="civil_excluir_btn1" mnemonicParsing="false" text="Excluir" />
+                                                <MenuItem fx:id="civil_limpar_btn1" mnemonicParsing="false" text="Limpar" />
+                                             </items>
+                                          </MenuButton>
+                                          <TableView fx:id="civil_tableView1" layoutX="22.0" layoutY="65.0" prefHeight="141.0" prefWidth="258.0">
+                                             <columns>
+                                                <TableColumn fx:id="civil_col_civil1" prefWidth="255.5" text="Lista de Estado Civil" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

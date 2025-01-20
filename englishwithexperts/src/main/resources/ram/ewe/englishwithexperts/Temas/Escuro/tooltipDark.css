@@ -1,0 +1,27 @@
+/**
+* @author Ramadan Ismael
+*/
+
+.tooltip {
+    -fx-background-color: #6D8AAA; /* Cor de fundo */
+    -fx-text-fill: #c0c0c0; /* Cor do texto */
+    -fx-padding: 5px; /* Espaçamento interno */
+    -fx-font-family: Arial;
+    -fx-font-weight: normal;
+    -fx-font-size: 11pt; /* Tamanho da fonte */
+    -fx-border-color: transparent; /* Cor da borda */
+    -fx-border-width: 0.5px; /* Largura da borda */
+    -fx-border-radius: 5px; /* Borda arredondada */
+    -fx-background-radius: 5px; /* Fundo arredondado */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 5); /* Sombra */
+}
+
+.tooltip:show {
+    -fx-opacity: 1; /* Transição para opacidade total */
+    -fx-transition: opacity 0.3s ease-out; /* Animação */
+}
+
+.tooltip-content {
+    -fx-font-family: "Arial"; /* Família de fontes */
+    -fx-font-weight: normal; /* Texto em negrito */
+}

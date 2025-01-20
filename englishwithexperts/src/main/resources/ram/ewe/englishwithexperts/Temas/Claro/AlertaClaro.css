@@ -1,0 +1,85 @@
+/**
+*@author Ramadan ismaeL
+*/
+
+BorderPane {
+    -fx-border-width: 1;
+    -fx-border-color: #548AF7;
+}
+
+.nav-top-confirmacao {
+    -fx-background-color: linear-gradient(to bottom right, #28135c, #643887);
+}
+
+.nav-top-aviso {
+    -fx-background-color: linear-gradient(to bottom right, #3A2700, #FFA408, #FFD787);
+}
+
+.nav-top-erro {
+    -fx-background-color: linear-gradient(to bottom right, #5F0000, #FF0000, #FFA5A5);
+}
+
+.nav-top-informacao {
+    -fx-background-color: linear-gradient(to bottom right, #051C3E, #1C539E, #3489FF);
+}
+
+.nav-top-sucesso {
+    -fx-background-color: linear-gradient(to bottom right, #053E18, #34FF63, #B4FFC7);
+}
+
+.nav-top-confirmacao, .nav-top-aviso, .nav-top-erro, .nav-top-informacao, .nav-top-sucesso {
+    -fx-font-family: "Arial Narrow";
+    -fx-font-size: 20px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #fff;
+}
+
+.nav-center {
+    -fx-background-color: #fff;
+}
+
+.message-title {
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.message {
+    -fx-font-size: 16pt;
+    -fx-alignment: center;
+    -fx-text-fill: black;
+}
+
+.messageBold {
+    -fx-font-size: 16pt;
+    -fx-alignment: center;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.lblinfo {
+    -fx-font-weight: bold;
+    -fx-font-size: 13pt;
+    -fx-text-fill: black;
+}
+
+Label {
+    -fx-font-family: "Agency FB";
+}
+
+.nav-bottom {
+    -fx-background-color: #e8e8e8;
+}
+
+Button {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-border-radius: 10px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(79, 156, 249, 0.54), 10, 0.3, 0, 0);
+}
+
+Button:hover {
+    -fx-border-color: linear-gradient(to bottom right, rgba(79, 156, 249, 0.54), red);
+}

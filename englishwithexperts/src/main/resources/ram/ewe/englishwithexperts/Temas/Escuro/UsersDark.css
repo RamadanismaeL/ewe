@@ -1,0 +1,240 @@
+/**
+*@author Ramadan Ismael
+*/
+
+.nav-center {
+    -fx-background-color: #2D2E30;
+}
+
+.window {
+    -fx-background-color: #1E1F22;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 6, 0, 0, 0);
+}
+
+.window2 {
+    -fx-background-color: #1E1F22;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #2D2E30;
+}
+
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-color: #2D2E30;
+}
+
+VBox {
+    -fx-padding: 20px;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+}
+
+HBox {
+    -fx-padding: 20px 0px 0px 0px;
+    -fx-alignment: CENTER;
+}
+
+.title {
+    -fx-font-family: Arial;
+    -fx-font-size: 18pt;
+    -fx-text-fill: #c0c0c0;
+}
+
+Button {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 35px;
+    -fx-font-size: 10pt;
+    -fx-text-fill: #c0c0c0;
+    -fx-font-family: Arial;
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px 10px 10px 10px;
+    -fx-border-color: #00152D;
+    -fx-border-radius: 10px 10px 10px 10px;
+    -fx-border-width: 0px 0px 0px 1px;
+}
+
+.btnAdd {
+    -fx-border-color: blue;
+}
+
+.btnEdit {
+    -fx-border-color: green;
+}
+
+.btnRemove {
+    -fx-border-color: red;
+}
+
+.btnClean {
+    -fx-border-color: #BB3E9E;
+}
+
+.btnAdd:hover {
+    -fx-border-color: #006BE1;
+    -fx-background-color: linear-gradient(to right, #006BE1 0%, rgba(0, 107, 225, 0.5) 50%, rgba(0, 107, 225, 0) 100%);
+}
+
+.btnEdit:hover {
+    -fx-border-color: #009700;
+    -fx-background-color: linear-gradient(to right, #009700 0%, rgba(0, 151, 0, 0.5) 50%, rgba(0, 151, 0, 0) 100%);
+}
+
+.btnRemove:hover {
+    -fx-border-color: #A40000;
+    -fx-background-color: linear-gradient(to right, #A40000 0%, rgba(191, 0, 0, 0.5) 50%, rgba(191, 0, 0, 0) 100%);
+}
+
+.btnClean:hover {
+    -fx-border-color: #AB0392;
+    -fx-background-color: linear-gradient(to right, #AB0392 0%, rgba(171, 3, 146, 0.5) 50%, rgba(171, 3, 146, 0) 100%);
+}
+
+Button:hover {
+    -fx-text-fill: #fff;
+    -fx-font-size: 13pt;
+}
+
+TextField {
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+    -fx-border-width: 0.2px;
+    -fx-border-color: gray;
+    -fx-border-radius: 20px;
+    -fx-pref-width: 400px;
+    -fx-pref-height: 30px;
+    -fx-font-family: Arial;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #fff;
+}
+
+TextField:focused {
+    -fx-border-width: 0.5px;
+    -fx-border-color: #548AF7;
+    -fx-font-size: 12pt;
+}
+
+Text {
+    -fx-font-family: Arial;
+    -fx-font-size: 11pt;
+    -fx-fill: #add8e6;
+    -fx-cursor: hand;
+}
+
+Text:hover {
+    -fx-font-family: Arial;
+    -fx-font-size: 16px;
+    -fx-underline: true;
+    -fx-fill: #5493DB;
+}
+
+.registeView {
+    -fx-background-color: #2D2E30;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 1), 8, 0, 0, 0);
+}
+
+.btnRegisterView {
+    -fx-alignment: CENTER;
+}
+
+.labelRegisterView {
+    -fx-pref-width: 110px;
+    -fx-pref-height: 20px;
+    -fx-text-fill: #c0c0c0;
+    -fx-font-family: "Arial";
+    -fx-font-size: 10pt;
+}
+.textFieldRegisterView {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-width: 0.2px;
+    -fx-border-color: gray;
+    -fx-border-radius: 5px;
+    -fx-pref-width: 310px;
+    -fx-pref-height: 27px;
+    -fx-font-family: Arial;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #fff;
+}
+
+.combo-box {
+    -fx-background-color: transparent;
+}
+
+.combo-box .text {
+    -fx-fill: #fff;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #c0c0c0;
+    -fx-padding: 4;
+    -fx-shape: "M 0 0 L 4 4 L 8 0 Z";
+}
+
+.combo-box-popup .list-view {
+    -fx-control-inner-background: #1e1f22;
+    -fx-border-width: 0.5px;
+    -fx-border-color: #548AF7;
+    -fx-text-fill: #fff;
+}
+
+.textEmptyRed {
+    -fx-border-color: red;
+    -fx-border-width: 1px;
+}
+
+.textGray {
+    -fx-border-color: gray;
+    -fx-border-width: 0.5px;
+}
+
+.lblEmptyRed {
+    -fx-text-fill: red;
+}
+
+.lblBlack {
+    -fx-text-fill: black;
+}
+
+.textFieldRegisterView:focused, .textGray:focused, .textEmptyRed:focused {
+    -fx-border-width: 0.5px;
+    -fx-border-color: #548AF7;
+    -fx-font-size: 12pt;
+}
+
+.passwordEYESRegisterView {
+    -fx-background-color: #2D2E30;
+    -fx-background-radius: 0px 5px 5px 0px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 0px 0.2px 0px 0px;
+    -fx-border-color: transparent;
+    -fx-pref-width: 32px;
+    -fx-pref-height: 25px;
+}
+
+.date {
+    -fx-font-weight: bold;
+}
+
+.tableHistoricoUser {
+    -fx-padding: 20px 0px 20px 0px;
+}
+
+.tableUser {
+    -fx-padding: 40px 0px 20px 0px;
+}
+
+FontAwesomeIconView {
+    -fx-fill: #c0c0c0;
+    -fx-cursor: hand;
+}

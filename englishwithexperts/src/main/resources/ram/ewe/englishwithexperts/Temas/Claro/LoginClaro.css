@@ -1,0 +1,131 @@
+/**
+* @author Ramadan ismaeL
+*/
+
+.left-form {
+    -fx-alignment: center;
+    -fx-background-color: #fff;
+    -fx-border-color: #00152D;
+    -fx-border-width: 0.8 0 0.8 0.8;
+    -fx-fill: black;
+    -fx-font-size: 16pt;
+    -fx-font-family: Tahoma;
+    -fx-cursor: default;
+}
+
+.left-form FontAwesomeIconView {
+    -fx-fill: #1D1D1D;
+    -fx-font-size: 7em;
+    -fx-cursor: default;
+}
+
+.right-form {
+    -fx-background-color: linear-gradient(to bottom right, #00152D, #006AE2);
+    -fx-border-color: #00152D;
+    -fx-border-width: 0.8 0.8 0.8 0;
+    -fx-cursor: default;
+}
+
+.close {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.close:hover {
+    -fx-background-color: #ff3547;
+    -fx-fill: white;
+}
+
+.right-form TextField, PasswordField {
+    -fx-background-color: transparent;
+    -fx-background-radius: 4px;
+    -fx-border-color: #000;
+    -fx-border-width: .4px;
+    -fx-border-radius: 4px;
+    -fx-font-size: 13px;
+    -fx-font-family: "Tahoma";
+    -fx-pref-width: 250px;
+    -fx-pref-height: 30px;
+    -fx-padding: 0 0 0 27;
+    -fx-text-fill: black;
+}
+
+.textEmptyRed {
+    -fx-border-color: red;
+}
+
+.textGray {
+    -fx-border-color: black;
+}
+
+.right-form TextField:focused, PasswordField:focused, .textEmptyRed:focused, .textGray:focused {
+    -fx-background-color: #D1D1D1;
+    -fx-border-color: linear-gradient(to bottom right, #00152D, #006AE2);
+    -fx-border-width: .8px;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.login-btn {
+    -fx-background-color: linear-gradient(to bottom right, #00152D, #006AE2);
+    -fx-background-radius: 6px;
+    -fx-pref-width: 105;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: "Tahoma";
+    -fx-cursor: hand;
+}
+
+.login-title {
+    -fx-font-size: 29px;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Agency FB";
+    -fx-font-weight: bold;
+    -fx-cursor: default;
+}
+
+.form:hover .right-form {
+    -fx-background-color: #fff;
+}
+
+.form:hover .right-form Label {
+    -fx-text-fill: black;
+}
+
+.form:hover .left-form {
+-fx-background-color: linear-gradient(to bottom right, #00152D, #006AE2);
+}
+
+.form:hover .left-form Text {
+    -fx-fill: #fff;
+}
+
+.form:hover .left-form FontAwesomeIconView {
+    -fx-fill: #fff;
+}
+
+.form:hover .login-btn {
+    -fx-background-color: transparent;
+    -fx-border-color: #00152D;
+    -fx-border-width: 0.1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-text-fill: black;
+}
+
+.form:hover .login-btn:hover {
+    -fx-background-color: linear-gradient(to top right, #00152D, #006AE2);
+    -fx-text-fill: #fff;
+}
+
+.form:hover .right-form TextField PasswordField {
+    -fx-background-color: linear-gradient(to bottom, #efefef, #eee);
+}
+
+.form .right-form FontAwesomeIconView {
+    -fx-fill: #fff;
+}
+
+.form:hover .right-form FontAwesomeIconView {
+    -fx-fill: #3D3D3D;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane fx:id="ramBorder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ram.ewe.englishwithexperts.Controllers.DashboardController">
+   <center>
+      <StackPane fx:id="ramCenter" prefHeight="150.0" prefWidth="200.0" styleClass="nav-background" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

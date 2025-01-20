@@ -1,0 +1,36 @@
+/**
+*@author Ramadan ismaeL
+*/
+
+VBox {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+ProgressBar {
+    -fx-accent: rgb(111, 0, 255);
+    -fx-control-inner-background: white; /*Cor do fundo da Bara*/
+    -fx-background-insets: 0;
+    -fx-border-width: 0px;
+    -fx-padding: 0;
+}
+
+ProgressBar .bar {
+    -fx-background-color: linear-gradient(to right, #122D6A, #3862BB, #5493DB);
+}
+
+ProgressBar .bar {
+    -fx-transition: all 1s ease-in-out;
+}
+
+ProgressIndicator {
+    -fx-background-radius: 50;
+    -fx-progress-color: rgb(111, 0, 255);
+    -fx-pref-width: 100px;
+    -fx-pref-height: 100px;
+}
+
+ProgressIndicator .spinner-path {
+    -fx-stroke: red; /*linear-gradient(to right, #3a00a5, #7700ff, rgb(203, 158, 255));*/
+    -fx-background-radius: 50;
+}

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="688.0" prefWidth="1146.0" styleClass="nav-center" stylesheets="@../../Temas/Claro/RegistrationsLight.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ram.ewe.englishwithexperts.Controllers.Registrations.RegistrationsController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="window">
+         <children>
+            <ScrollPane fx:id="viewRegistration" hbarPolicy="NEVER" prefHeight="668.0" prefWidth="1126.0" styleClass="window2" vbarPolicy="ALWAYS" vmax="0.9" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1181.0" prefWidth="1112.0" styleClass="window2">
+                     <children>
+                        <Label fx:id="lblFormularioDeInscricao" styleClass="title" text="FORMULÁRIO DE INSCRIÇÃO" AnchorPane.leftAnchor="20.0" />
+                        <VBox prefHeight="1214.0" prefWidth="1110.0">
+                           <children>
+                              <VBox prefHeight="1172.0" prefWidth="1070.0">
+                                 <children>
+                                    <HBox prefHeight="35.0" prefWidth="1345.0" styleClass="registeViewTitle">
+                                       <children>
+                                          <Label fx:id="lblInformacoesAcademicas" text="Informações Acadêmicas" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="193.0" prefWidth="1030.0" styleClass="registeViewBox">
+                                       <children>
+                                          <AnchorPane prefHeight="199.0" prefWidth="200.0" styleClass="registeViewLeftBox">
+                                             <children>
+                                                <Label fx:id="lblNumeroDeEstudante" styleClass="labelRegister" text="Número de Estudante" />
+                                                <Label fx:id="lblNivel" layoutY="40.0" styleClass="labelRegister" text="Nível" />
+                                                <ComboBox fx:id="txtHorario" layoutX="145.0" layoutY="121.0" styleClass="textRegisterMedian" />
+                                                <Label fx:id="lblModalidade" layoutY="80.0" styleClass="labelRegister" text="Modalidade" />
+                                                <Label fx:id="lblHorario" layoutY="120.0" styleClass="labelRegister" text="Horário" />
+                                                <ComboBox fx:id="txtNivel" layoutX="145.0" layoutY="41.0" styleClass="textRegisterMedian" />
+                                                <Label fx:id="lblDataDeIngresso" layoutY="160.0" styleClass="labelRegister" text="Data de Ingresso" />
+                                                <Label fx:id="txtDataDeIngresso" layoutX="145.0" layoutY="160.0" text="20/12/2024">
+                                                   <styleClass>
+                                                      <String fx:value="labelRegister" />
+                                                      <String fx:value="labelBold" />
+                                                   </styleClass>
+                                                </Label>
+                                                <RadioButton fx:id="online" layoutX="145.0" layoutY="81.0" mnemonicParsing="false">
+                                                   <graphic>
+                                                      <Label fx:id="lblOnline" styleClass="labelRegister" text="  Online" />
+                                                   </graphic>
+                                                </RadioButton>
+                                                <RadioButton fx:id="presencial" layoutX="240.0" layoutY="81.0" mnemonicParsing="false">
+                                                   <graphic>
+                                                      <Label fx:id="lblPresencial" styleClass="labelRegister" text="  Presencial" />
+                                                   </graphic>
+                                                </RadioButton>
+                                                <Label fx:id="txtNumeroDeEstudante" layoutX="145.0" prefWidth="150.0" text="EWE - 239854">
+                                                   <styleClass>
+                                                      <String fx:value="labelRegister" />
+                                                      <String fx:value="labelBold" />
+                                                   </styleClass>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="199.0" prefWidth="200.0" styleClass="registeViewLeftBox">
+                                             <children>
+                                                <Label fx:id="lblDuracao" layoutX="60.0" styleClass="labelRegister" text="Duração" />
+                                                <Label fx:id="lblTaxaDeInscricao" layoutX="60.0" layoutY="40.0" styleClass="labelRegister" text="Taxa de Inscrição" />
+                                                <Label fx:id="lblTaxaDeMensalidade" layoutX="60.0" layoutY="80.0" styleClass="labelRegister" text="Taxa de Mensalidade" />
+                                                <Label fx:id="txtDuracao" layoutX="205.0" prefWidth="85.0" text="- -">
+                                                   <styleClass>
+                                                      <String fx:value="labelRegister" />
+                                                      <String fx:value="labelBold" />
+                                                   </styleClass>
+                                                </Label>
+                                                <Label fx:id="txtTaxaDeInscricao" layoutX="205.0" layoutY="40.0" prefWidth="50.0" text="0.0">
+                                                   <styleClass>
+                                                      <String fx:value="labelRegister" />
+                                                      <String fx:value="labelBold" />
+                                                   </styleClass>
+                                                </Label>
+                                                <Label layoutX="257.0" layoutY="80.0" text="MT">
+                                                   <styleClass>
+                                                      <String fx:value="labelRegister" />
+                                                      <String fx:value="labelBold" />
+                                                   </styleClass>
+                                                </Label>
+                                                <Label fx:id="txtTaxaDeMensalidade" layoutX="205.0" layoutY="80.0" prefWidth="50.0" text="0.0">
+                                                   <styleClass>
+                                                      <String fx:value="labelRegister" />
+                                                      <String fx:value="labelBold" />
+                                                   </styleClass>
+                                                </Label>
+                                                <Label layoutX="257.0" layoutY="40.0" text="MT">
+                                                   <styleClass>
+                                                      <String fx:value="labelRegister" />
+                                                      <String fx:value="labelBold" />
+                                                   </styleClass>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="35.0" prefWidth="1345.0" styleClass="registeViewTitle">
+                                       <children>
+                                          <Label fx:id="lblDocumentosPessoais" text="Documentos Pessoais" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="97.0" prefWidth="1030.0" styleClass="registeViewBox">
+                                       <children>
+                                          <AnchorPane prefHeight="199.0" prefWidth="200.0" styleClass="registeViewLeftBox">
+                                             <children>
+                                                <Label fx:id="lblTipo" styleClass="labelRegister" text="Tipo" />
+                                                <Label fx:id="lblNumeroDeIdentidade" layoutY="40.0" styleClass="labelRegister" text="Número de Identidade" />
+                                                <ComboBox fx:id="txtTipo" layoutX="145.0" layoutY="1.0" styleClass="textRegister" />
+                                                <TextField fx:id="txtNumeroDeIdentidade" layoutX="145.0" layoutY="41.0" promptText="Número de Identidade" styleClass="textRegister" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="199.0" prefWidth="200.0" styleClass="registeViewLeftBox">
+                                             <children>
+                                                <Label fx:id="lblLocalDeEmissao" layoutX="60.0" styleClass="labelRegister" text="Local de Emissão" />
+                                                <Label fx:id="lblDataDeValidade" layoutX="60.0" layoutY="40.0" styleClass="labelRegister" text="Data de Válidade" />
+                                                <TextField fx:id="txtLocalDeEmissao" layoutX="205.0" layoutY="1.0" promptText="Local de Emissão" styleClass="textRegister" />
+                                                <DatePicker fx:id="txtDataDeValidade" layoutX="205.0" layoutY="41.0" promptText="Data de Validade" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="35.0" prefWidth="1345.0" styleClass="registeViewTitle">
+                                       <children>
+                                          <Label fx:id="lblInformacoesDoEstudante" text="Informações do Estudante" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="299.0" prefWidth="1030.0" styleClass="registeViewBox">
+                                       <children>
+                                          <AnchorPane prefHeight="199.0" prefWidth="200.0" styleClass="registeViewLeftBox">
+                                             <children>
+                                                <Label fx:id="lblNomeCompleto" styleClass="labelRegister" text="Nome Completo" />
+                                                <Label fx:id="lblDataDeNascimento" layoutY="40.0" styleClass="labelRegister" text="Data de Nascimento" />
+                                                <ComboBox fx:id="txtGenero" layoutX="145.0" layoutY="81.0" styleClass="textRegisterMedian" />
+                                                <Label fx:id="lblGenero" layoutY="80.0" styleClass="labelRegister" text="Gênero" />
+                                                <Label fx:id="lblEstadoCivil" layoutY="120.0" styleClass="labelRegister" text="Estado Civil" />
+                                                <Label fx:id="lblNacionalidade" layoutY="160.0" styleClass="labelRegister" text="Nacionalidade" />
+                                                <Label fx:id="lblNatural" layoutY="200.0" styleClass="labelRegister" text="Natural" />
+                                                <Label fx:id="lblEnderecoResidencial" layoutY="240.0" styleClass="labelRegister" text="Endereço Residencial" />
+                                                <TextField fx:id="txtNomeCompleto" layoutX="145.0" layoutY="1.0" promptText="Nome Completo" styleClass="textRegister" />
+                                                <DatePicker fx:id="txtDataDeNascimento" layoutX="145.0" layoutY="41.0" promptText="Data de Nascimento" />
+                                                <ComboBox fx:id="txtEstadoCivil" layoutX="145.0" layoutY="121.0" styleClass="textRegisterMedian" />
+                                                <TextField fx:id="txtNacionalidade" layoutX="145.0" layoutY="161.0" promptText="Nacionalidade" styleClass="textRegisterMedian" />
+                                                <TextField fx:id="txtNatural" layoutX="145.0" layoutY="201.0" promptText="Natural" styleClass="textRegisterMedian" />
+                                                <TextField fx:id="txtEnderecoResidencial" layoutX="145.0" layoutY="241.0" promptText="Endereço Residencial" styleClass="textRegister" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="199.0" prefWidth="200.0" styleClass="registeViewLeftBox">
+                                             <children>
+                                                <Label fx:id="lblNumeroDeTelefone" layoutX="60.0" styleClass="labelRegister" text="Número de Telefone" />
+                                                <Label fx:id="lblEmail" layoutX="60.0" layoutY="40.0" styleClass="labelRegister" text="E-mail" />
+                                                <Label fx:id="lblObservacoes" layoutX="60.0" layoutY="80.0" styleClass="labelRegister" text="Observações" />
+                                                <TextField fx:id="txtTelefone2" alignment="CENTER" layoutX="361.0" layoutY="1.0" promptText="Telefone 2" styleClass="textRegisterPhoneNumber" />
+                                                <TextField fx:id="txtTelefone1" alignment="CENTER" layoutX="205.0" layoutY="1.0" promptText="Telefone 1" styleClass="textRegisterPhoneNumber" />
+                                                <TextField fx:id="txtEmail" layoutX="205.0" layoutY="41.0" promptText="E-mail do Estudante" styleClass="textRegister" />
+                                                <TextArea fx:id="txtObservacoes" layoutX="205.0" layoutY="81.0" prefHeight="185.0" prefWidth="200.0" promptText="Algumas observações?" wrapText="true" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="35.0" prefWidth="1345.0" styleClass="registeViewTitle">
+                                       <children>
+                                          <Label fx:id="lblContactoDeResponsavel" text="Contacto de Emergência/Responsável" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="175.0" prefWidth="1030.0" styleClass="registeViewBox">
+                                       <children>
+                                          <AnchorPane prefHeight="199.0" prefWidth="200.0" styleClass="registeViewLeftBox">
+                                             <children>
+                                                <Label fx:id="lblRespNomeCompleto" styleClass="labelRegister" text="Nome Completo" />
+                                                <Label fx:id="lblRespRelacao" layoutY="40.0" styleClass="labelRegister" text="Relação" />
+                                                <Label fx:id="lblRespEnderecoResidencial" layoutY="80.0" styleClass="labelRegister" text="Endereço Residencial" />
+                                                <Label fx:id="lblRespNumeroDeTelefone" layoutY="120.0" styleClass="labelRegister" text="Número de Telefone" />
+                                                <ComboBox fx:id="txtRespRelacao" layoutX="145.0" layoutY="41.0" styleClass="textRegister" />
+                                                <TextField fx:id="txtRespNomeCompleto" layoutX="145.0" layoutY="1.0" promptText="Nome Completo" styleClass="textRegister" />
+                                                <TextField fx:id="txtRespEnderecoResidencial" layoutX="145.0" layoutY="81.0" promptText="Endereço Residencial" styleClass="textRegister" />
+                                                <TextField fx:id="txtRespTelefone1" alignment="CENTER" layoutX="145.0" layoutY="121.0" promptText="Telefone 1" styleClass="textRegisterPhoneNumber" />
+                                                <TextField fx:id="txtRespTelefone2" alignment="CENTER" layoutX="301.0" layoutY="121.0" promptText="Telefone 2" styleClass="textRegisterPhoneNumber" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </HBox>
+                                    <Line endX="350.0" startX="-100.0" styleClass="line" />
+                                    <HBox prefHeight="35.0" prefWidth="1345.0" styleClass="registeViewTitle">
+                                       <children>
+                                          <Button fx:id="btnLimpar" mnemonicParsing="false" text="Limpar">
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnClean" />
+                                             </styleClass></Button>
+                                          <Button fx:id="btnSubmeter" mnemonicParsing="false" text="Submeter">
+                                             <styleClass>
+                                                <String fx:value="btn" />
+                                                <String fx:value="btnAdd" />
+                                             </styleClass></Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <AnchorPane fx:id="viewPayment" layoutX="302.0" layoutY="150.0" prefHeight="389.0" prefWidth="542.0" styleClass="window" stylesheets="@../../Temas/Claro/PayNowLight.css" visible="false">
+               <children>
+                  <Label fx:id="lblPagamento" layoutX="200.0" layoutY="5.0" styleClass="title" text="PAGAMENTO" />
+                  <VBox layoutX="2.0" prefHeight="389.0" prefWidth="542.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="575.0">
+                           <children>
+                              <AnchorPane styleClass="form">
+                                 <children>
+                                    <Label fx:id="lblReciboPgmt" layoutX="1.0" styleClass="labelRegister" text="RECIBO Nº" />
+                                    <Label fx:id="lblNumeroDeEstudantePgmt" layoutX="1.0" layoutY="40.0" styleClass="labelRegister" text="Número de Estudante" />
+                                    <Label fx:id="lblExmoPgmt" layoutX="1.0" layoutY="120.0" styleClass="labelRegister" text="Exmo.(s)  Sr.(s)" />
+                                    <Label fx:id="lblReferentePgmt" layoutX="1.0" layoutY="80.0" styleClass="labelRegister" text="Referente a" />
+                                    <Label fx:id="lblMetodoPgmt" layoutX="1.0" layoutY="160.0" styleClass="labelRegister" text="Método" />
+                                    <Label fx:id="lblDescontoPgmt" layoutX="1.0" layoutY="200.0" styleClass="labelRegister" text="Desconto" />
+                                    <Label fx:id="txtReciboPgmt" layoutX="150.0" text="00000014">
+                                       <styleClass>
+                                          <String fx:value="labelRegister" />
+                                          <String fx:value="labelBold" />
+                                       </styleClass>
+                                    </Label>
+                                    <TextField fx:id="txtExmoPgmt" layoutX="150.0" layoutY="121.0" promptText="Exmo.(s)  Sr.(s)" styleClass="textRegister" />
+                                    <Spinner fx:id="txtDescontoPgmt" editable="true" layoutX="150.0" layoutY="201.0" />
+                                    <ComboBox fx:id="txtMetodoPgmt" layoutX="150.0" layoutY="161.0" prefWidth="150.0" styleClass="textRegisterMedian" />
+                                    <Label fx:id="txtNumeroDeEstudantePgmt" layoutX="150.0" layoutY="40.0" text="EWE - 20249321">
+                                       <styleClass>
+                                          <String fx:value="labelRegister" />
+                                          <String fx:value="labelBold" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label fx:id="txtReferentePgmt" layoutX="150.0" layoutY="80.0" text="Inscrição">
+                                       <styleClass>
+                                          <String fx:value="labelRegister" />
+                                          <String fx:value="labelBold" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="55.0" prefWidth="462.0" styleClass="registeViewTitle">
+                           <children>
+                              <Button fx:id="btnCancelarPgmt" mnemonicParsing="false" text="Cancelar">
+                                 <styleClass>
+                                    <String fx:value="btn" />
+                                    <String fx:value="btnCancelar" />
+                                 </styleClass>
+                              </Button>
+                              <Button fx:id="btnPagarPgmt" mnemonicParsing="false" text="Pagar">
+                                 <styleClass>
+                                    <String fx:value="btn" />
+                                    <String fx:value="btnPay" />
+                                 </styleClass>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

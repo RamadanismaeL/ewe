@@ -1,0 +1,53 @@
+VBox {
+    -fx-padding: 60px 40px 40px 40px;
+}
+
+.form {
+    -fx-background-color: #fff;
+    -fx-pref-width: 667px;
+}
+
+HBox, .form, formMainPay {
+    -fx-pref-height: 240px;
+}
+
+.spinner {
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+    -fx-border-width: 0.2px;
+    -fx-border-color: gray;
+    -fx-border-radius: 8px;
+    -fx-pref-width: 180px;
+    -fx-pref-height: 28px;
+}
+
+.spinner .text-field {
+    -fx-font-family: "Arial";
+    -fx-font-size: 11pt;
+    -fx-text-fill: black;
+    -fx-alignment: center;
+}
+
+.spinner:focused {
+    -fx-border-width: 0.5px;
+    -fx-border-color: #548AF7;
+    -fx-font-size: 12pt;
+}
+
+.btnCancelar {
+    -fx-border-color: red;
+}
+
+.btnPay {
+    -fx-border-color: green;
+}
+
+.btnPay:hover {
+    -fx-border-color: #009700;
+    -fx-background-color: linear-gradient(to right, #009700 0%, rgba(0, 151, 0, 0.5) 50%, rgba(0, 151, 0, 0) 100%);
+}
+
+.btnCancelar:hover {
+    -fx-border-color: #A40000;
+    -fx-background-color: linear-gradient(to right, #A40000 0%, rgba(191, 0, 0, 0.5) 50%, rgba(191, 0, 0, 0) 100%);
+}

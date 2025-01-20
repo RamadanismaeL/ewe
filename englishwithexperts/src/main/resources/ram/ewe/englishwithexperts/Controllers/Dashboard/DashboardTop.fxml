@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<StackPane fx:id="ramMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ram.ewe.englishwithexperts.Controllers.Dashboard.DashboardTopController">
+   <children>
+      <VBox prefHeight="60.0" prefWidth="1366.0">
+         <children>
+            <AnchorPane prefHeight="30.0" styleClass="nav-background">
+               <children>
+                  <Label layoutX="16.0" layoutY="6.0" text="English With Experts (EWE)" />
+                  <Button fx:id="minimize" contentDisplay="RIGHT" layoutX="1243.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="53.0" styleClass="minimize">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="MINUS" size="1.2em" text="" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnClose" contentDisplay="RIGHT" layoutX="1295.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="71.0" styleClass="close">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CLOSE" size="1.2em" text="" />
+                     </graphic>
+                  </Button>
+                  <Line endX="1365.0" layoutX="25.0" layoutY="30.0" stroke="#b5b5b5" strokeWidth="0.1" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <MenuBar prefHeight="30.0" prefWidth="1366.0">
+               <menus>
+                  <Menu mnemonicParsing="false">
+                     <graphic>
+                        <Label text="Relatório" />
+                     </graphic>
+                  </Menu>
+                  <Menu mnemonicParsing="false">
+                     <items>
+                        <MenuItem fx:id="btnConfig" mnemonicParsing="false" text="Configurações" />
+                        <Menu mnemonicParsing="false" text="Idiomas">
+                           <items>
+                              <CheckMenuItem fx:id="langIngles" mnemonicParsing="false" text="Inglês" />
+                              <CheckMenuItem fx:id="langPortugues" mnemonicParsing="false" text="Português" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Temas">
+                           <items>
+                              <CheckMenuItem fx:id="themeClaro" mnemonicParsing="false" text="Claro" />
+                              <CheckMenuItem fx:id="themeEscuro" mnemonicParsing="false" text="Escuro" />
+                           </items>
+                        </Menu>
+                        <MenuItem fx:id="btnUser" mnemonicParsing="false" text="Usuários" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="restartApp" mnemonicParsing="false" text="Reiniciar" />
+                     </items>
+                     <graphic>
+                        <Label text="Definições" />
+                     </graphic>
+                  </Menu>
+                  <Menu mnemonicParsing="false">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Documentação &amp; Suporte" />
+                        <MenuItem mnemonicParsing="false" text="Licença" />
+                        <MenuItem mnemonicParsing="false" text="Sobre" />
+                     </items>
+                     <graphic>
+                        <Label text="Ajuda" />
+                     </graphic>
+                  </Menu>
+               </menus>
+               <styleClass>
+                  <String fx:value="nav-background" />
+                  <String fx:value="nav-top" />
+               </styleClass>
+            </MenuBar>
+            <Line endX="1365.0" stroke="#b5b5b5" strokeWidth="0.1" />
+         </children>
+         <styleClass>
+            <String fx:value="nav-top" />
+            <String fx:value="nav-background" />
+         </styleClass>
+      </VBox>
+   </children>
+</StackPane>

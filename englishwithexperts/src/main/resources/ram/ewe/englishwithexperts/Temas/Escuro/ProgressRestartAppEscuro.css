@@ -1,0 +1,20 @@
+/**
+*@author Ramadan ismaeL
+*/
+
+VBox {
+    -fx-background-color: linear-gradient(to bottom right, #00152D, #006AE2);
+    -fx-alignment: center;
+}
+
+.progressIndicator {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 100px;
+    -fx-progress-color: #fff;
+}
+
+Label {
+    -fx-font-size: 16px;
+    -fx-font-family: "Tahoma";
+    -fx-text-fill: #fff;
+}

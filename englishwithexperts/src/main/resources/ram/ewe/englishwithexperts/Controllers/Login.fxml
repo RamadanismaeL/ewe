@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" styleClass="form" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ram.ewe.englishwithexperts.Controllers.LoginController">
+   <children>
+      <VBox layoutX="271.0" layoutY="137.0" prefHeight="200.0" prefWidth="100.0" styleClass="left-form" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FontAwesomeIconView fx:id="marca" glyphName="USERS" size="7em">
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin></FontAwesomeIconView>
+            <AnchorPane prefHeight="24.0" prefWidth="349.0">
+               <children>
+                  <Text fx:id="info" layoutX="1.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENGLISH WITH EXPERTS" />
+               </children>
+            </AnchorPane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </VBox>
+      <Pane layoutX="486.0" layoutY="121.0" styleClass="right-form" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btnClose" contentDisplay="RIGHT" layoutX="281.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="69.0" styleClass="close">
+               <graphic>
+                  <FontAwesomeIconView glyphName="CLOSE" size="1.5em" text="" />
+               </graphic>
+            </Button>
+            <TextField fx:id="txtUsername" layoutX="58.0" layoutY="159.0" promptText="Usuário" />
+            <PasswordField fx:id="txtPassword" layoutX="58.0" layoutY="196.0" promptText="Senha" />
+            <TextField fx:id="fldPassword" layoutX="58.0" layoutY="196.0" promptText="Senha" visible="false" />
+            <Button fx:id="btnEye" layoutX="276.0" layoutY="199.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="20.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <FontAwesomeIconView fx:id="PasswordIcon" glyphName="EYE" size="1.5em">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+               </graphic>
+            </Button>
+            <FontAwesomeIconView glyphName="USER" layoutX="63.0" layoutY="182.0" size="2em">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></FontAwesomeIconView>
+            <FontAwesomeIconView glyphName="LOCK" layoutX="63.0" layoutY="219.0" size="2em">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></FontAwesomeIconView>
+            <Button fx:id="btnLogin" layoutX="123.0" layoutY="243.0" mnemonicParsing="false" styleClass="login-btn" text="Iniciar Sessão" />
+            <Label fx:id="title" layoutX="118.0" layoutY="106.0" styleClass="login-title" text="Bem-vindo!" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Pane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

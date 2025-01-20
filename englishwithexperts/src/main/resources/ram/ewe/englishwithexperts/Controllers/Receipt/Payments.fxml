@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="formReceipt" styleClass="tamanho" stylesheets="@../../Temas/Claro/ReceiptyPaymentsLight.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ram.ewe.englishwithexperts.Controllers.Receipt.PaymentsController">
+   <children>
+      <VBox layoutX="148.0" layoutY="289.0" prefHeight="850.0" prefWidth="993.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane styleClass="tamanho-metade">
+               <children>
+                  <Label layoutX="70.0" layoutY="-9.0" styleClass="titulo" text="ENGLISH  WITH  EXPERT" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0">
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutY="40.0" text="Macha-Socimol, Matola, Moçambique" />
+                  <Label layoutX="1.0" layoutY="62.0" text="Tel.: +(258) 84 014 5802 / 87 214 5802" />
+                  <Label layoutY="84.0" text="Email.: ziyadeabdula@gmail.com" />
+                  <Label layoutX="611.0" layoutY="40.0" text="RECIBO Nº">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="infoBold" />
+                        <String fx:value="reciboValor" />
+                     </styleClass>
+                  </Label>
+                  <AnchorPane layoutX="613.0" layoutY="61.0" prefHeight="30.0" prefWidth="151.0">
+                     <children>
+                        <Line endX="150.0" layoutY="4.0" stroke="#dddddd" />
+                        <Line endX="150.0" layoutY="6.0" stroke="#dddddd" />
+                        <Line endX="150.0" layoutY="8.0" stroke="#dddddd" />
+                        <Line endX="150.0" layoutY="10.0" stroke="#dddddd" />
+                        <Line endX="150.0" layoutY="12.0" stroke="#dddddd" />
+                        <Line endX="150.0" layoutY="14.0" stroke="#dddddd" />
+                        <Line endX="150.0" layoutY="16.0" stroke="#dddddd" />
+                        <Line endX="150.0" layoutY="18.0" stroke="#dddddd" />
+                        <Line endX="150.0" layoutY="20.0" stroke="#dddddd" />
+                        <Line endX="150.0" layoutY="22.0" stroke="#dddddd" />
+                        <Line endX="150.0" layoutY="24.0" stroke="#dddddd" />
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="txtMoney" alignment="CENTER" layoutX="612.0" layoutY="61.0" prefWidth="152.0" styleClass="reciboValor" text="1 200.00" />
+                  <Label layoutX="764.0" layoutY="62.0" styleClass="reciboValor" text="MT" AnchorPane.rightAnchor="0.0" />
+                  <Label layoutX="497.0" layoutY="106.0" text="Número de Estudante:" />
+                  <Label layoutY="189.0" text="Recebi(emos) do(a) Exmo.(a) Sr.(a)" />
+                  <AnchorPane layoutY="186.0" prefHeight="30.0" prefWidth="486.0" AnchorPane.leftAnchor="265.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Line endX="524.0" layoutY="4.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="524.0" layoutY="6.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="524.0" layoutY="8.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="524.0" layoutY="10.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="524.0" layoutY="12.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="524.0" layoutY="14.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="524.0" layoutY="16.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="524.0" layoutY="18.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="524.0" layoutY="20.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="524.0" layoutY="22.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="524.0" layoutY="24.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="txtNameExmo" layoutX="277.0" layoutY="186.0" prefWidth="513.0" styleClass="reciboValor" text="Ramadan Ibraimo Ismael" />
+                  <Label layoutY="220.0" text="a quantia de " />
+                  <AnchorPane layoutX="96.0" layoutY="217.0" prefHeight="30.0" prefWidth="699.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Line endX="688.0" layoutY="4.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="688.0" layoutY="6.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="688.0" layoutY="8.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="688.0" layoutY="10.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="688.0" layoutY="12.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="688.0" layoutY="14.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="688.0" layoutY="16.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="688.0" layoutY="18.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="688.0" layoutY="20.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="688.0" layoutY="22.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="688.0" layoutY="24.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="txtExtenso" layoutX="113.0" layoutY="217.0" prefWidth="678.0" styleClass="reciboValor" text="Mil e Cento e Cinquenta Meticais" />
+                  <Label layoutY="250.0" text="referente ao pagamento de " />
+                  <AnchorPane layoutX="225.0" layoutY="248.0" prefHeight="30.0" prefWidth="579.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Line endX="573.0" layoutY="4.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="573.0" layoutY="6.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="573.0" layoutY="8.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="573.0" layoutY="10.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="573.0" layoutY="12.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="573.0" layoutY="14.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="573.0" layoutY="16.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="573.0" layoutY="18.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="573.0" layoutY="20.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="573.0" layoutY="22.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="573.0" layoutY="24.0" stroke="#dddddd" AnchorPane.rightAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="228.0" layoutY="248.0" styleClass="reciboValor" text="Inscrição" />
+                  <Label layoutY="280.0" text="de que passamos o presente recibo." />
+                  <CheckBox fx:id="txtEmola" layoutY="370.0" mnemonicParsing="false" styleClass="custom-checkbox" text="E-Mola" />
+                  <CheckBox fx:id="txtMpesa" layoutY="400.0" mnemonicParsing="false" styleClass="custom-checkbox" text="M-Pesa" />
+                  <CheckBox fx:id="txtNumerario" layoutY="430.0" mnemonicParsing="false" styleClass="custom-checkbox" text="Numerário" />
+                  <Label fx:id="txtAtentidoPor" alignment="CENTER" styleClass="footer" text="PROCESSADO POR COMPUTADOR - Atendido por :  ramadan" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <Label layoutX="469.0" layoutY="420.0" text="Maputo," />
+                  <Label fx:id="txtDia" alignment="CENTER" layoutX="535.0" layoutY="420.0" prefHeight="22.0" prefWidth="30.0" text="31" />
+                  <Label alignment="CENTER" layoutX="565.0" layoutY="420.0" prefWidth="30.0" text="de" />
+                  <Label fx:id="txtMes" alignment="CENTER" layoutX="595.0" layoutY="420.0" prefWidth="130.0" text="Dezembro" />
+                  <Label alignment="CENTER" layoutX="725.0" layoutY="420.0" prefWidth="30.0" text="de" />
+                  <Label fx:id="txtAno" alignment="CENTER" layoutY="420.0" prefWidth="40.0" text="2024" AnchorPane.rightAnchor="0.0" />
+                  <Label fx:id="txtHora" layoutX="507.0" layoutY="443.0" prefWidth="80.0" styleClass="footer" text="15:28:32" />
+                  <Label alignment="CENTER" layoutX="471.0" layoutY="465.0" prefHeight="22.0" prefWidth="323.0" text="Assinatura" />
+                  <Label fx:id="txtNrReceipt" alignment="CENTER_RIGHT" layoutY="40.0" prefWidth="90.0" text="0000007" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="infoBold" />
+                        <String fx:value="reciboValor" />
+                     </styleClass>
+                  </Label>
+                  <Label fx:id="txtNrStudent" alignment="CENTER_RIGHT" layoutY="106.0" prefWidth="120.0" text="EWE-20241202" AnchorPane.rightAnchor="0.0" />
+                  <Label layoutX="469.0" layoutY="443.0" styleClass="footer" text="Hora:" />
+                  <Label layoutY="340.0" text="Meio de Pagamento :" />
+                  <Line endX="28.0" layoutX="536.0" layoutY="440.0" stroke="SILVER" />
+                  <Line endX="130.0" layoutX="595.0" layoutY="440.0" stroke="SILVER" />
+                  <Line endX="39.0" layoutX="755.0" layoutY="440.0" stroke="SILVER" />
+                  <Line endX="323.0" layoutX="471.0" layoutY="510.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

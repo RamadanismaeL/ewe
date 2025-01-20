@@ -1,0 +1,43 @@
+/**
+*@author Ramadan Ismael
+*/
+
+/* NAV TOP */
+
+.nav-background, FontAwesomeIconView {
+    -fx-background-color: #ddd;
+    -fx-fill: #3B3B3B;
+}
+
+.nav-top Label {
+    -fx-font-family: "Arial";
+    -fx-text-fill: black;
+}
+
+.close {
+    -fx-background-color: transparent;
+}
+
+.close:hover FontAwesomeIconView {
+    -fx-fill: #fff;
+}
+
+.close:hover {
+    -fx-background-color: #ff3547;
+}
+
+.minimize {
+    -fx-background-color: transparent;
+}
+
+.minimize:hover FontAwesomeIconView {
+    -fx-fill: #fff;
+}
+
+.minimize:hover {
+    -fx-background-color: #A9A9A9;
+}
+
+.menu .context-menu {
+    -fx-background-color: white;
+}

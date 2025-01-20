@@ -1,0 +1,310 @@
+/**
+*@author Ramadan Ismael
+*/
+
+.nav-center {
+    -fx-background-color: #ddd;
+}
+
+.window {
+    -fx-background-color: #fff;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 6, 0, 0, 0);
+}
+
+.window2 {
+    -fx-background-color: #fff;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #E1E1E1;
+}
+
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-color: #E1E1E1;
+}
+
+VBox {
+    -fx-padding: 20px;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+}
+
+.title {
+    -fx-font-family: "Arial";
+    -fx-font-size: 18pt;
+    -fx-text-fill: #bdc3c7;
+}
+
+.labelRegister {
+    -fx-pref-height: 30px;
+    -fx-text-fill: black;
+    -fx-font-family: "Arial";
+    -fx-font-size: 10pt;
+}
+
+.labelBold {
+    -fx-font-weight: bold;
+}
+
+.textRegister {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-width: 0.2px;
+    -fx-border-color: gray;
+    -fx-border-radius: 5px;
+    -fx-pref-width: 310px;
+    -fx-pref-height: 28px;
+    -fx-font-family: "Arial";
+    -fx-font-size: 11pt;
+    -fx-text-fill: black;
+}
+
+.textRegisterMedian {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-width: 0.2px;
+    -fx-border-color: gray;
+    -fx-border-radius: 5px;
+    -fx-pref-width: 180px;
+    -fx-pref-height: 28px;
+    -fx-font-family: "Arial";
+    -fx-font-size: 11pt;
+    -fx-text-fill: black;
+}
+
+.textRegisterPhoneNumber {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-width: 0.2px;
+    -fx-border-color: gray;
+    -fx-border-radius: 5px;
+    -fx-pref-width: 154px;
+    -fx-pref-height: 28px;
+    -fx-font-family: "Arial";
+    -fx-font-size: 11pt;
+    -fx-text-fill: black;
+}
+
+.textEmptyRed {
+    -fx-border-color: red;
+    -fx-border-width: 1px;
+}
+
+.textGray {
+    -fx-border-color: gray;
+    -fx-border-width: 0.2px;
+}
+
+.lblEmptyRed {
+    -fx-text-fill: red;
+}
+
+.lblBlack {
+    -fx-text-fill: black;
+}
+
+.textRegister:focused, .text-area:focused, .textGray:focused, .textEmptyRed:focused {
+    -fx-border-width: 0.5px;
+    -fx-border-color: #548AF7;
+    -fx-font-size: 12pt;
+}
+
+.registeViewTitle {
+    -fx-alignment: center_left;
+    -fx-padding: 30px 0px 0px 0px;
+    -fx-background-color: transparent;
+    -fx-pref-width: 1030px;
+    -fx-pref-height: 70px;
+    -fx-font-family: "Arial";
+    -fx-font-size: 16pt;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, gray, 4, 0, 1, 4);
+}
+
+.registeViewTitle:hover {
+    -fx-font-size: 19pt;
+}
+
+.registeViewBox {
+    -fx-padding: 10px 0px 10px 0px;
+}
+
+.registeViewLeftBox {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    -fx-alignment: top_left;
+    -fx-pref-width: 515px;
+}
+
+.date-picker {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-width: 0.2px;
+    -fx-border-color: gray;
+    -fx-border-radius: 5px;
+    -fx-pref-width: 180px;
+    -fx-pref-height: 28px;
+}
+
+.date-picker .text-field {
+    -fx-background-color: transparent;
+    -fx-font-family: "Arial";
+    -fx-font-size: 11pt;
+    -fx-text-fill: black;
+    -fx-alignment: center;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #D7D7D7;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-background-color: #2D2E30;
+}
+
+.date-picker-popup {
+    -fx-border-color: transparent;
+}
+
+.date-picker-popup .day-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+.date-picker-popup .day-cell:hover {
+    -fx-background-color: #ADD8E6;
+}
+
+.date-picker:focused .arrow-button {
+    -fx-background-color: #548AF7;
+}
+
+.date-picker:focused {
+    -fx-border-width: 0.5px;
+    -fx-border-color: #548AF7;
+}
+
+.text-area {
+    -fx-pref-width: 310px;
+    -fx-pref-height: 185px;
+    -fx-font-family: "Arial";
+    -fx-font-size: 11pt;
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: gray;
+    -fx-border-radius: 5px;
+    -fx-border-width: 0.2px;
+}
+
+.text-area .content {
+    -fx-background-color: #fff;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 0.2px;
+}
+
+.combo-box {
+    -fx-background-color: transparent;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #B3B1B0;
+    -fx-shape: "M 0 0 L 4 4 L 8 0 Z";
+}
+
+.combo-box:focused {
+    -fx-border-width: 0.5px;
+    -fx-border-color: #548AF7;
+}
+
+.combo-box-popup:hover .list-view {
+    -fx-border-width: 0.5px;
+    -fx-border-color: #548AF7;
+}
+
+.combo-box:focused .arrow {
+    -fx-background-color: #548AF7;
+}
+
+.btn {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 35px;
+    -fx-font-size: 10pt;
+    -fx-text-fill: black;
+    -fx-font-family: "Arial";
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px 10px 10px 10px;
+    -fx-border-color: #00152D;
+    -fx-border-radius: 10px 10px 10px 10px;
+    -fx-border-width: 0px 0px 0px 1px;
+    -fx-font-weight: normal;
+}
+
+.btnAdd {
+    -fx-border-color: blue;
+}
+
+.btnClean {
+    -fx-border-color: #BB3E9E;
+}
+
+.btnAdd:hover {
+    -fx-border-color: #006BE1;
+    -fx-background-color: linear-gradient(to right, #006BE1 0%, rgba(0, 107, 225, 0.5) 50%, rgba(0, 107, 225, 0) 100%);
+}
+
+.btnClean:hover {
+    -fx-border-color: #AB0392;
+    -fx-background-color: linear-gradient(to right, #AB0392 0%, rgba(171, 3, 146, 0.5) 50%, rgba(171, 3, 146, 0) 100%);
+}
+
+.btn:hover {
+    -fx-text-fill: #fff;
+    -fx-font-size: 13pt;
+}
+
+.line {
+    -fx-stroke: #585958;
+    -fx-stroke-width: 0.2px;
+}
+
+.comboBoxEmptyRed {
+    -fx-border-color: red;
+    -fx-border-width: 1px;
+}
+
+.comboBoxEmptyRed .arrow {
+    -fx-background-color: red;
+}
+
+.comboBoxEmptyRed:focused {
+    -fx-border-width: 0.5px;
+    -fx-border-color: #548AF7;
+    -fx-font-size: 11pt;
+}
+
+.datePickerEmptyRed {
+    -fx-border-color: red;
+    -fx-border-width: 1px;
+}
+
+.datePickerEmptyRed .arrow-button {
+    -fx-background-color: red;
+}
+
+.datePickerEmptyRed:focused {
+    -fx-border-width: 0.5px;
+    -fx-border-color: #548AF7;
+    -fx-font-size: 11pt;
+}
